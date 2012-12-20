@@ -31,3 +31,10 @@ The goal of OMPP is to provide a platform for medical physicists to store, analy
 3) Software Architecture
 
 3.1) The OMPP shall support a plugin based architecture for maximum reusability, and extendability by the medical physics community.
+
+TECHNOLOGIES
+The following technologies are presently being used:
+
+1) Eclipse Rich Client Platform 4
+1.1) Eclipse Modeling Framework
+1.2) Connected Data Objects (CDO)
