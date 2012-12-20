@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_fEfycDIYEeKlYeFzIY01sQ" elementId="org.ompp.e4.ide.application" bindingContexts="_fEfycTIYEeKlYeFzIY01sQ">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_fEgZjDIYEeKlYeFzIY01sQ" label="Open Medical Physics Platform" width="500" height="400">
+    <children xsi:type="advanced:PerspectiveStack" xmi:id="_fEgZlDIYEeKlYeFzIY01sQ">
+      <children xsi:type="advanced:Perspective" xmi:id="_fEgZlTIYEeKlYeFzIY01sQ">
+        <children xsi:type="basic:PartSashContainer" xmi:id="_fEgZljIYEeKlYeFzIY01sQ">
+          <children xsi:type="basic:PartStack" xmi:id="_fEgZlzIYEeKlYeFzIY01sQ"/>
+        </children>
+      </children>
+    </children>
+    <mainMenu xmi:id="_fEgZjTIYEeKlYeFzIY01sQ" elementId="menu:org.eclipse.ui.main.menu">
+      <children xsi:type="menu:Menu" xmi:id="_fEgZjjIYEeKlYeFzIY01sQ" label="File">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_fEgZjzIYEeKlYeFzIY01sQ" label="Open" iconURI="platform:/plugin/org.ompp.application/icons/sample.gif" command="_fEgZgzIYEeKlYeFzIY01sQ"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_fEgZkDIYEeKlYeFzIY01sQ" label="Save" iconURI="platform:/plugin/org.ompp.application/icons/save_edit.gif" command="_fEgZhjIYEeKlYeFzIY01sQ"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_fEgZkTIYEeKlYeFzIY01sQ" label="Quit" command="_fEfyejIYEeKlYeFzIY01sQ"/>
+      </children>
+      <children xsi:type="menu:Menu" xmi:id="_fEgZkjIYEeKlYeFzIY01sQ" label="Help">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_fEgZkzIYEeKlYeFzIY01sQ" label="About" command="_fEgZiTIYEeKlYeFzIY01sQ"/>
+      </children>
+    </mainMenu>
+    <trimBars xmi:id="_fEgZmDIYEeKlYeFzIY01sQ">
+      <children xsi:type="menu:ToolBar" xmi:id="_fEgZmTIYEeKlYeFzIY01sQ" elementId="toolbar:org.eclipse.ui.main.toolbar">
+        <children xsi:type="menu:HandledToolItem" xmi:id="_fEgZmjIYEeKlYeFzIY01sQ" iconURI="platform:/plugin/org.ompp.application/icons/sample.gif" command="_fEgZgzIYEeKlYeFzIY01sQ"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_fEgZmzIYEeKlYeFzIY01sQ" iconURI="platform:/plugin/org.ompp.application/icons/save_edit.gif" command="_fEgZhjIYEeKlYeFzIY01sQ"/>
+      </children>
+    </trimBars>
+  </children>
+  <handlers xmi:id="_fEgZgDIYEeKlYeFzIY01sQ" contributionURI="bundleclass://org.ompp.application/org.ompp.application.handlers.QuitHandler" command="_fEfyejIYEeKlYeFzIY01sQ"/>
+  <handlers xmi:id="_fEgZhDIYEeKlYeFzIY01sQ" contributionURI="bundleclass://org.ompp.application/org.ompp.application.handlers.OpenHandler" command="_fEgZgzIYEeKlYeFzIY01sQ"/>
+  <handlers xmi:id="_fEgZhzIYEeKlYeFzIY01sQ" contributionURI="bundleclass://org.ompp.application/org.ompp.application.handlers.SaveHandler" command="_fEgZhjIYEeKlYeFzIY01sQ"/>
+  <handlers xmi:id="_fEgZijIYEeKlYeFzIY01sQ" contributionURI="bundleclass://org.ompp.application/org.ompp.application.handlers.AboutHandler" command="_fEgZiTIYEeKlYeFzIY01sQ"/>
+  <bindingTables xmi:id="_fEgZgTIYEeKlYeFzIY01sQ" bindingContext="_fEfycTIYEeKlYeFzIY01sQ">
+    <bindings xmi:id="_fEgZgjIYEeKlYeFzIY01sQ" keySequence="M1+Q" command="_fEfyejIYEeKlYeFzIY01sQ"/>
+    <bindings xmi:id="_fEgZhTIYEeKlYeFzIY01sQ" keySequence="M1+O" command="_fEgZgzIYEeKlYeFzIY01sQ"/>
+    <bindings xmi:id="_fEgZiDIYEeKlYeFzIY01sQ" keySequence="M1+S" command="_fEgZhjIYEeKlYeFzIY01sQ"/>
+    <bindings xmi:id="_fEgZizIYEeKlYeFzIY01sQ" keySequence="M1+A" command="_fEgZiTIYEeKlYeFzIY01sQ"/>
+  </bindingTables>
+  <rootContext xmi:id="_fEfycTIYEeKlYeFzIY01sQ" elementId="org.eclipse.ui.contexts.dialogAndWindow" name="In Dialog and Windows">
+    <children xmi:id="_fEfycjIYEeKlYeFzIY01sQ" elementId="org.eclipse.ui.contexts.window" name="In Windows"/>
+    <children xmi:id="_fEfyczIYEeKlYeFzIY01sQ" elementId="org.eclipse.ui.contexts.dialog" name="In Dialogs"/>
+  </rootContext>
+  <commands xmi:id="_fEfyejIYEeKlYeFzIY01sQ" elementId="org.eclipse.ui.file.exit" commandName="quitCommand"/>
+  <commands xmi:id="_fEgZgzIYEeKlYeFzIY01sQ" elementId="org.ompp.application.open" commandName="openCommand"/>
+  <commands xmi:id="_fEgZhjIYEeKlYeFzIY01sQ" elementId="org.eclipse.ui.file.save" commandName="saveCommand"/>
+  <commands xmi:id="_fEgZiTIYEeKlYeFzIY01sQ" elementId="org.eclipse.ui.help.aboutAction" commandName="aboutCommand"/>
+  <addons xmi:id="_fEfydDIYEeKlYeFzIY01sQ" elementId="org.eclipse.e4.core.commands.service" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
+  <addons xmi:id="_fEfydTIYEeKlYeFzIY01sQ" elementId="org.eclipse.e4.ui.contexts.service" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
+  <addons xmi:id="_fEfydjIYEeKlYeFzIY01sQ" elementId="org.eclipse.e4.ui.bindings.service" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
+  <addons xmi:id="_fEfydzIYEeKlYeFzIY01sQ" elementId="org.eclipse.e4.ui.workbench.commands.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.CommandProcessingAddon"/>
+  <addons xmi:id="_fEfyeDIYEeKlYeFzIY01sQ" elementId="org.eclipse.e4.ui.workbench.contexts.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.ContextProcessingAddon"/>
+  <addons xmi:id="_fEfyeTIYEeKlYeFzIY01sQ" elementId="org.eclipse.e4.ui.workbench.bindings.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.swt/org.eclipse.e4.ui.workbench.swt.util.BindingProcessingAddon"/>
+</application:Application>
