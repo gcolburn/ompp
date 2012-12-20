@@ -72,16 +72,16 @@ public class ModelAdapterFactory extends AdapterFactoryImpl {
 				return createOrganizationAdapter();
 			}
 			@Override
-			public Adapter caseEquipment(Equipment object) {
-				return createEquipmentAdapter();
-			}
-			@Override
 			public Adapter caseParameter(Parameter object) {
 				return createParameterAdapter();
 			}
 			@Override
 			public Adapter caseDoubleParameter(DoubleParameter object) {
 				return createDoubleParameterAdapter();
+			}
+			@Override
+			public Adapter caseEquipment(Equipment object) {
+				return createEquipmentAdapter();
 			}
 			@Override
 			public Adapter defaultCase(EObject object) {
@@ -118,20 +118,6 @@ public class ModelAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.ompp.organization.model.Equipment <em>Equipment</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.ompp.organization.model.Equipment
-	 * @generated
-	 */
-	public Adapter createEquipmentAdapter() {
-		return null;
-	}
-
-	/**
 	 * Creates a new adapter for an object of class '{@link org.ompp.organization.model.Parameter <em>Parameter</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -156,6 +142,20 @@ public class ModelAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createDoubleParameterAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.ompp.organization.model.Equipment <em>Equipment</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.ompp.organization.model.Equipment
+	 * @generated
+	 */
+	public Adapter createEquipmentAdapter() {
 		return null;
 	}
 

@@ -72,12 +72,6 @@ public class ModelSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case ModelPackage.EQUIPMENT: {
-				Equipment equipment = (Equipment)theEObject;
-				T result = caseEquipment(equipment);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
 			case ModelPackage.PARAMETER: {
 				Parameter parameter = (Parameter)theEObject;
 				T result = caseParameter(parameter);
@@ -88,6 +82,12 @@ public class ModelSwitch<T> extends Switch<T> {
 				DoubleParameter doubleParameter = (DoubleParameter)theEObject;
 				T result = caseDoubleParameter(doubleParameter);
 				if (result == null) result = caseParameter(doubleParameter);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case ModelPackage.EQUIPMENT: {
+				Equipment equipment = (Equipment)theEObject;
+				T result = caseEquipment(equipment);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -107,21 +107,6 @@ public class ModelSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseOrganization(Organization object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Equipment</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Equipment</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseEquipment(Equipment object) {
 		return null;
 	}
 
@@ -152,6 +137,21 @@ public class ModelSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseDoubleParameter(DoubleParameter object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Equipment</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Equipment</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseEquipment(Equipment object) {
 		return null;
 	}
 

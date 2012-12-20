@@ -31,15 +31,6 @@ public interface ModelFactory extends EFactory {
 	Organization createOrganization();
 
 	/**
-	 * Returns a new object of class '<em>Equipment</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Equipment</em>'.
-	 * @generated
-	 */
-	Equipment createEquipment();
-
-	/**
 	 * Returns a new object of class '<em>Parameter</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -56,6 +47,15 @@ public interface ModelFactory extends EFactory {
 	 * @generated
 	 */
 	DoubleParameter createDoubleParameter();
+
+	/**
+	 * Returns a new object of class '<em>Equipment</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Equipment</em>'.
+	 * @generated
+	 */
+	Equipment createEquipment();
 
 	/**
 	 * Returns the package supported by this factory.

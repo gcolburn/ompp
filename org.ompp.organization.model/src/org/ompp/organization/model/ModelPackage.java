@@ -111,52 +111,6 @@ public interface ModelPackage extends EPackage {
 	int ORGANIZATION_FEATURE_COUNT = 4;
 
 	/**
-	 * The meta object id for the '{@link org.ompp.organization.model.impl.EquipmentImpl <em>Equipment</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.ompp.organization.model.impl.EquipmentImpl
-	 * @see org.ompp.organization.model.impl.ModelPackageImpl#getEquipment()
-	 * @generated
-	 */
-	int EQUIPMENT = 1;
-
-	/**
-	 * The feature id for the '<em><b>Manufacturer</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int EQUIPMENT__MANUFACTURER = 0;
-
-	/**
-	 * The feature id for the '<em><b>Model</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int EQUIPMENT__MODEL = 1;
-
-	/**
-	 * The feature id for the '<em><b>Parameters</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int EQUIPMENT__PARAMETERS = 2;
-
-	/**
-	 * The number of structural features of the '<em>Equipment</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int EQUIPMENT_FEATURE_COUNT = 3;
-
-	/**
 	 * The meta object id for the '{@link org.ompp.organization.model.impl.ParameterImpl <em>Parameter</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -164,7 +118,7 @@ public interface ModelPackage extends EPackage {
 	 * @see org.ompp.organization.model.impl.ModelPackageImpl#getParameter()
 	 * @generated
 	 */
-	int PARAMETER = 2;
+	int PARAMETER = 1;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -185,13 +139,22 @@ public interface ModelPackage extends EPackage {
 	int PARAMETER__LATEX_STRING = 1;
 
 	/**
+	 * The feature id for the '<em><b>Description</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PARAMETER__DESCRIPTION = 2;
+
+	/**
 	 * The number of structural features of the '<em>Parameter</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PARAMETER_FEATURE_COUNT = 2;
+	int PARAMETER_FEATURE_COUNT = 3;
 
 	/**
 	 * The meta object id for the '{@link org.ompp.organization.model.impl.DoubleParameterImpl <em>Double Parameter</em>}' class.
@@ -201,7 +164,7 @@ public interface ModelPackage extends EPackage {
 	 * @see org.ompp.organization.model.impl.ModelPackageImpl#getDoubleParameter()
 	 * @generated
 	 */
-	int DOUBLE_PARAMETER = 3;
+	int DOUBLE_PARAMETER = 2;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -220,6 +183,15 @@ public interface ModelPackage extends EPackage {
 	 * @ordered
 	 */
 	int DOUBLE_PARAMETER__LATEX_STRING = PARAMETER__LATEX_STRING;
+
+	/**
+	 * The feature id for the '<em><b>Description</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOUBLE_PARAMETER__DESCRIPTION = PARAMETER__DESCRIPTION;
 
 	/**
 	 * The feature id for the '<em><b>Value</b></em>' attribute.
@@ -247,6 +219,71 @@ public interface ModelPackage extends EPackage {
 	 * @ordered
 	 */
 	int DOUBLE_PARAMETER_FEATURE_COUNT = PARAMETER_FEATURE_COUNT + 2;
+
+
+	/**
+	 * The meta object id for the '{@link org.ompp.organization.model.impl.EquipmentImpl <em>Equipment</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.ompp.organization.model.impl.EquipmentImpl
+	 * @see org.ompp.organization.model.impl.ModelPackageImpl#getEquipment()
+	 * @generated
+	 */
+	int EQUIPMENT = 3;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EQUIPMENT__ID = 0;
+
+	/**
+	 * The feature id for the '<em><b>Manufacturer</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EQUIPMENT__MANUFACTURER = 1;
+
+	/**
+	 * The feature id for the '<em><b>Model</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EQUIPMENT__MODEL = 2;
+
+	/**
+	 * The feature id for the '<em><b>Serial Number</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EQUIPMENT__SERIAL_NUMBER = 3;
+
+	/**
+	 * The feature id for the '<em><b>Parameters</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EQUIPMENT__PARAMETERS = 4;
+
+	/**
+	 * The number of structural features of the '<em>Equipment</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EQUIPMENT_FEATURE_COUNT = 5;
 
 
 	/**
@@ -304,49 +341,6 @@ public interface ModelPackage extends EPackage {
 	EReference getOrganization_Equipment();
 
 	/**
-	 * Returns the meta object for class '{@link org.ompp.organization.model.Equipment <em>Equipment</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Equipment</em>'.
-	 * @see org.ompp.organization.model.Equipment
-	 * @generated
-	 */
-	EClass getEquipment();
-
-	/**
-	 * Returns the meta object for the attribute '{@link org.ompp.organization.model.Equipment#getManufacturer <em>Manufacturer</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Manufacturer</em>'.
-	 * @see org.ompp.organization.model.Equipment#getManufacturer()
-	 * @see #getEquipment()
-	 * @generated
-	 */
-	EAttribute getEquipment_Manufacturer();
-
-	/**
-	 * Returns the meta object for the attribute '{@link org.ompp.organization.model.Equipment#getModel <em>Model</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Model</em>'.
-	 * @see org.ompp.organization.model.Equipment#getModel()
-	 * @see #getEquipment()
-	 * @generated
-	 */
-	EAttribute getEquipment_Model();
-
-	/**
-	 * Returns the meta object for the reference list '{@link org.ompp.organization.model.Equipment#getParameters <em>Parameters</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference list '<em>Parameters</em>'.
-	 * @see org.ompp.organization.model.Equipment#getParameters()
-	 * @see #getEquipment()
-	 * @generated
-	 */
-	EReference getEquipment_Parameters();
-
-	/**
 	 * Returns the meta object for class '{@link org.ompp.organization.model.Parameter <em>Parameter</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -379,6 +373,17 @@ public interface ModelPackage extends EPackage {
 	EAttribute getParameter_LatexString();
 
 	/**
+	 * Returns the meta object for the attribute '{@link org.ompp.organization.model.Parameter#getDescription <em>Description</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Description</em>'.
+	 * @see org.ompp.organization.model.Parameter#getDescription()
+	 * @see #getParameter()
+	 * @generated
+	 */
+	EAttribute getParameter_Description();
+
+	/**
 	 * Returns the meta object for class '{@link org.ompp.organization.model.DoubleParameter <em>Double Parameter</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -409,6 +414,71 @@ public interface ModelPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getDoubleParameter_Units();
+
+	/**
+	 * Returns the meta object for class '{@link org.ompp.organization.model.Equipment <em>Equipment</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Equipment</em>'.
+	 * @see org.ompp.organization.model.Equipment
+	 * @generated
+	 */
+	EClass getEquipment();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.ompp.organization.model.Equipment#getId <em>Id</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Id</em>'.
+	 * @see org.ompp.organization.model.Equipment#getId()
+	 * @see #getEquipment()
+	 * @generated
+	 */
+	EAttribute getEquipment_Id();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.ompp.organization.model.Equipment#getManufacturer <em>Manufacturer</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Manufacturer</em>'.
+	 * @see org.ompp.organization.model.Equipment#getManufacturer()
+	 * @see #getEquipment()
+	 * @generated
+	 */
+	EAttribute getEquipment_Manufacturer();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.ompp.organization.model.Equipment#getModel <em>Model</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Model</em>'.
+	 * @see org.ompp.organization.model.Equipment#getModel()
+	 * @see #getEquipment()
+	 * @generated
+	 */
+	EAttribute getEquipment_Model();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.ompp.organization.model.Equipment#getSerialNumber <em>Serial Number</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Serial Number</em>'.
+	 * @see org.ompp.organization.model.Equipment#getSerialNumber()
+	 * @see #getEquipment()
+	 * @generated
+	 */
+	EAttribute getEquipment_SerialNumber();
+
+	/**
+	 * Returns the meta object for the reference list '{@link org.ompp.organization.model.Equipment#getParameters <em>Parameters</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Parameters</em>'.
+	 * @see org.ompp.organization.model.Equipment#getParameters()
+	 * @see #getEquipment()
+	 * @generated
+	 */
+	EReference getEquipment_Parameters();
 
 	/**
 	 * Returns the factory that creates the instances of the model.
@@ -475,40 +545,6 @@ public interface ModelPackage extends EPackage {
 		EReference ORGANIZATION__EQUIPMENT = eINSTANCE.getOrganization_Equipment();
 
 		/**
-		 * The meta object literal for the '{@link org.ompp.organization.model.impl.EquipmentImpl <em>Equipment</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.ompp.organization.model.impl.EquipmentImpl
-		 * @see org.ompp.organization.model.impl.ModelPackageImpl#getEquipment()
-		 * @generated
-		 */
-		EClass EQUIPMENT = eINSTANCE.getEquipment();
-
-		/**
-		 * The meta object literal for the '<em><b>Manufacturer</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute EQUIPMENT__MANUFACTURER = eINSTANCE.getEquipment_Manufacturer();
-
-		/**
-		 * The meta object literal for the '<em><b>Model</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute EQUIPMENT__MODEL = eINSTANCE.getEquipment_Model();
-
-		/**
-		 * The meta object literal for the '<em><b>Parameters</b></em>' reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference EQUIPMENT__PARAMETERS = eINSTANCE.getEquipment_Parameters();
-
-		/**
 		 * The meta object literal for the '{@link org.ompp.organization.model.impl.ParameterImpl <em>Parameter</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -535,6 +571,14 @@ public interface ModelPackage extends EPackage {
 		EAttribute PARAMETER__LATEX_STRING = eINSTANCE.getParameter_LatexString();
 
 		/**
+		 * The meta object literal for the '<em><b>Description</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PARAMETER__DESCRIPTION = eINSTANCE.getParameter_Description();
+
+		/**
 		 * The meta object literal for the '{@link org.ompp.organization.model.impl.DoubleParameterImpl <em>Double Parameter</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -559,6 +603,56 @@ public interface ModelPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute DOUBLE_PARAMETER__UNITS = eINSTANCE.getDoubleParameter_Units();
+
+		/**
+		 * The meta object literal for the '{@link org.ompp.organization.model.impl.EquipmentImpl <em>Equipment</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.ompp.organization.model.impl.EquipmentImpl
+		 * @see org.ompp.organization.model.impl.ModelPackageImpl#getEquipment()
+		 * @generated
+		 */
+		EClass EQUIPMENT = eINSTANCE.getEquipment();
+
+		/**
+		 * The meta object literal for the '<em><b>Id</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute EQUIPMENT__ID = eINSTANCE.getEquipment_Id();
+
+		/**
+		 * The meta object literal for the '<em><b>Manufacturer</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute EQUIPMENT__MANUFACTURER = eINSTANCE.getEquipment_Manufacturer();
+
+		/**
+		 * The meta object literal for the '<em><b>Model</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute EQUIPMENT__MODEL = eINSTANCE.getEquipment_Model();
+
+		/**
+		 * The meta object literal for the '<em><b>Serial Number</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute EQUIPMENT__SERIAL_NUMBER = eINSTANCE.getEquipment_SerialNumber();
+
+		/**
+		 * The meta object literal for the '<em><b>Parameters</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference EQUIPMENT__PARAMETERS = eINSTANCE.getEquipment_Parameters();
 
 	}
 

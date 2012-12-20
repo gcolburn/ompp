@@ -22,6 +22,7 @@ import org.ompp.organization.model.Parameter;
  * <ul>
  *   <li>{@link org.ompp.organization.model.impl.ParameterImpl#getName <em>Name</em>}</li>
  *   <li>{@link org.ompp.organization.model.impl.ParameterImpl#getLatexString <em>Latex String</em>}</li>
+ *   <li>{@link org.ompp.organization.model.impl.ParameterImpl#getDescription <em>Description</em>}</li>
  * </ul>
  * </p>
  *
@@ -91,6 +92,24 @@ public class ParameterImpl extends CDOObjectImpl implements Parameter {
 	 */
 	public void setLatexString(String newLatexString) {
 		eSet(ModelPackage.Literals.PARAMETER__LATEX_STRING, newLatexString);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String getDescription() {
+		return (String)eGet(ModelPackage.Literals.PARAMETER__DESCRIPTION, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setDescription(String newDescription) {
+		eSet(ModelPackage.Literals.PARAMETER__DESCRIPTION, newDescription);
 	}
 
 } //ParameterImpl

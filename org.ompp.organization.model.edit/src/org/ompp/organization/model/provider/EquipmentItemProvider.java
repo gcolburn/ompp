@@ -60,11 +60,35 @@ public class EquipmentItemProvider
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
+			addIdPropertyDescriptor(object);
 			addManufacturerPropertyDescriptor(object);
 			addModelPropertyDescriptor(object);
+			addSerialNumberPropertyDescriptor(object);
 			addParametersPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
+	}
+
+	/**
+	 * This adds a property descriptor for the Id feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addIdPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_Equipment_id_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Equipment_id_feature", "_UI_Equipment_type"),
+				 ModelPackage.Literals.EQUIPMENT__ID,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 null,
+				 null));
 	}
 
 	/**
@@ -103,6 +127,28 @@ public class EquipmentItemProvider
 				 getString("_UI_Equipment_model_feature"),
 				 getString("_UI_PropertyDescriptor_description", "_UI_Equipment_model_feature", "_UI_Equipment_type"),
 				 ModelPackage.Literals.EQUIPMENT__MODEL,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 null,
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Serial Number feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addSerialNumberPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_Equipment_serialNumber_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Equipment_serialNumber_feature", "_UI_Equipment_type"),
+				 ModelPackage.Literals.EQUIPMENT__SERIAL_NUMBER,
 				 true,
 				 false,
 				 false,
@@ -152,7 +198,7 @@ public class EquipmentItemProvider
 	 */
 	@Override
 	public String getText(Object object) {
-		String label = ((Equipment)object).getManufacturer();
+		String label = ((Equipment)object).getId();
 		return label == null || label.length() == 0 ?
 			getString("_UI_Equipment_type") :
 			getString("_UI_Equipment_type") + " " + label;
@@ -170,8 +216,10 @@ public class EquipmentItemProvider
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(Equipment.class)) {
+			case ModelPackage.EQUIPMENT__ID:
 			case ModelPackage.EQUIPMENT__MANUFACTURER:
 			case ModelPackage.EQUIPMENT__MODEL:
+			case ModelPackage.EQUIPMENT__SERIAL_NUMBER:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
 		}

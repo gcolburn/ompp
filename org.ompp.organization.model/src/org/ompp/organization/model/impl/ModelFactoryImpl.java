@@ -57,9 +57,9 @@ public class ModelFactoryImpl extends EFactoryImpl implements ModelFactory {
 	public EObject create(EClass eClass) {
 		switch (eClass.getClassifierID()) {
 			case ModelPackage.ORGANIZATION: return (EObject)createOrganization();
-			case ModelPackage.EQUIPMENT: return (EObject)createEquipment();
 			case ModelPackage.PARAMETER: return (EObject)createParameter();
 			case ModelPackage.DOUBLE_PARAMETER: return (EObject)createDoubleParameter();
+			case ModelPackage.EQUIPMENT: return (EObject)createEquipment();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -80,16 +80,6 @@ public class ModelFactoryImpl extends EFactoryImpl implements ModelFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Equipment createEquipment() {
-		EquipmentImpl equipment = new EquipmentImpl();
-		return equipment;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public Parameter createParameter() {
 		ParameterImpl parameter = new ParameterImpl();
 		return parameter;
@@ -103,6 +93,16 @@ public class ModelFactoryImpl extends EFactoryImpl implements ModelFactory {
 	public DoubleParameter createDoubleParameter() {
 		DoubleParameterImpl doubleParameter = new DoubleParameterImpl();
 		return doubleParameter;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Equipment createEquipment() {
+		EquipmentImpl equipment = new EquipmentImpl();
+		return equipment;
 	}
 
 	/**

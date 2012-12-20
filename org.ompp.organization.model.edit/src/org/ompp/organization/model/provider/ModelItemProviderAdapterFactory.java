@@ -263,9 +263,9 @@ public class ModelItemProviderAdapterFactory extends ModelAdapterFactory impleme
 	 */
 	public void dispose() {
 		if (organizationItemProvider != null) organizationItemProvider.dispose();
-		if (equipmentItemProvider != null) equipmentItemProvider.dispose();
 		if (parameterItemProvider != null) parameterItemProvider.dispose();
 		if (doubleParameterItemProvider != null) doubleParameterItemProvider.dispose();
+		if (equipmentItemProvider != null) equipmentItemProvider.dispose();
 	}
 
 }

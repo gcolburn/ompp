@@ -27,8 +27,10 @@ import org.ompp.organization.model.Parameter;
  * <p>
  * The following features are implemented:
  * <ul>
+ *   <li>{@link org.ompp.organization.model.impl.EquipmentImpl#getId <em>Id</em>}</li>
  *   <li>{@link org.ompp.organization.model.impl.EquipmentImpl#getManufacturer <em>Manufacturer</em>}</li>
  *   <li>{@link org.ompp.organization.model.impl.EquipmentImpl#getModel <em>Model</em>}</li>
+ *   <li>{@link org.ompp.organization.model.impl.EquipmentImpl#getSerialNumber <em>Serial Number</em>}</li>
  *   <li>{@link org.ompp.organization.model.impl.EquipmentImpl#getParameters <em>Parameters</em>}</li>
  * </ul>
  * </p>
@@ -70,6 +72,24 @@ public class EquipmentImpl extends CDOObjectImpl implements Equipment {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public String getId() {
+		return (String)eGet(ModelPackage.Literals.EQUIPMENT__ID, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setId(String newId) {
+		eSet(ModelPackage.Literals.EQUIPMENT__ID, newId);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public String getManufacturer() {
 		return (String)eGet(ModelPackage.Literals.EQUIPMENT__MANUFACTURER, true);
 	}
@@ -99,6 +119,24 @@ public class EquipmentImpl extends CDOObjectImpl implements Equipment {
 	 */
 	public void setModel(String newModel) {
 		eSet(ModelPackage.Literals.EQUIPMENT__MODEL, newModel);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String getSerialNumber() {
+		return (String)eGet(ModelPackage.Literals.EQUIPMENT__SERIAL_NUMBER, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setSerialNumber(String newSerialNumber) {
+		eSet(ModelPackage.Literals.EQUIPMENT__SERIAL_NUMBER, newSerialNumber);
 	}
 
 	/**

@@ -15,8 +15,10 @@ import org.eclipse.emf.ecore.EObject;
  * <p>
  * The following features are supported:
  * <ul>
+ *   <li>{@link org.ompp.organization.model.Equipment#getId <em>Id</em>}</li>
  *   <li>{@link org.ompp.organization.model.Equipment#getManufacturer <em>Manufacturer</em>}</li>
  *   <li>{@link org.ompp.organization.model.Equipment#getModel <em>Model</em>}</li>
+ *   <li>{@link org.ompp.organization.model.Equipment#getSerialNumber <em>Serial Number</em>}</li>
  *   <li>{@link org.ompp.organization.model.Equipment#getParameters <em>Parameters</em>}</li>
  * </ul>
  * </p>
@@ -27,6 +29,32 @@ import org.eclipse.emf.ecore.EObject;
  * @generated
  */
 public interface Equipment extends CDOObject {
+	/**
+	 * Returns the value of the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Id</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Id</em>' attribute.
+	 * @see #setId(String)
+	 * @see org.ompp.organization.model.ModelPackage#getEquipment_Id()
+	 * @model
+	 * @generated
+	 */
+	String getId();
+
+	/**
+	 * Sets the value of the '{@link org.ompp.organization.model.Equipment#getId <em>Id</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Id</em>' attribute.
+	 * @see #getId()
+	 * @generated
+	 */
+	void setId(String value);
+
 	/**
 	 * Returns the value of the '<em><b>Manufacturer</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -78,6 +106,32 @@ public interface Equipment extends CDOObject {
 	 * @generated
 	 */
 	void setModel(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Serial Number</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Serial Number</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Serial Number</em>' attribute.
+	 * @see #setSerialNumber(String)
+	 * @see org.ompp.organization.model.ModelPackage#getEquipment_SerialNumber()
+	 * @model
+	 * @generated
+	 */
+	String getSerialNumber();
+
+	/**
+	 * Sets the value of the '{@link org.ompp.organization.model.Equipment#getSerialNumber <em>Serial Number</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Serial Number</em>' attribute.
+	 * @see #getSerialNumber()
+	 * @generated
+	 */
+	void setSerialNumber(String value);
 
 	/**
 	 * Returns the value of the '<em><b>Parameters</b></em>' reference list.
