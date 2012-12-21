@@ -56,9 +56,9 @@
       <plugin id="org.eclipse.osgi"/>
       <plugin id="org.eclipse.osgi.services"/>
       <plugin id="org.hsqldb"/>
-      <plugin id="org.ompp.cdo"/>
       <plugin id="org.ompp.cdo.hsqldb"/>
       <plugin id="org.ompp.cdo.hsqldb.application"/>
+      <plugin id="org.ompp.cdo.model"/>
    </plugins>
 
 

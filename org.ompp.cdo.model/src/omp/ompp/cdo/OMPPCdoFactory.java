@@ -30,6 +30,16 @@ public interface OMPPCdoFactory extends EFactory {
 	 */
 	CDOClient createCDOClient();
 
+	
+	/**
+	 * Returns a new object of class '<em>CDO Client</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>CDO Client</em>'.
+	 * @generated NOT
+	 */
+	CDOClient createCDOClient( String name, String uri, String repositoryName, String resourceName);
+	
 	/**
 	 * Returns a new object of class '<em>CDO Server</em>'.
 	 * <!-- begin-user-doc -->
@@ -39,6 +49,15 @@ public interface OMPPCdoFactory extends EFactory {
 	 */
 	CDOServer createCDOServer();
 
+	/**
+	 * Returns a new object of class '<em>CDO Server</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>CDO Server</em>'.
+	 * @generated NOT
+	 */
+	CDOServer createCDOServer( String repositoryName, String resourceName );
+	
 	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->

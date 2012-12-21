@@ -72,6 +72,22 @@ public class OMPPCdoFactoryImpl extends EFactoryImpl implements OMPPCdoFactory {
 		CDOClientImpl cdoClient = new CDOClientImpl();
 		return cdoClient;
 	}
+	
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param repositoryName 
+	 * @param resourceName 
+	 * @generated NOT
+	 */
+	public CDOClient createCDOClient( String name, String uri, String repositoryName, String resourceName) {
+		CDOClientImpl cdoClient = new CDOClientImpl();
+		cdoClient.setName( name );
+		cdoClient.setUri( uri );
+		cdoClient.setRepositoryName( repositoryName );
+		cdoClient.setResourceName( resourceName );
+		return cdoClient;
+	}
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -80,6 +96,16 @@ public class OMPPCdoFactoryImpl extends EFactoryImpl implements OMPPCdoFactory {
 	 */
 	public CDOServer createCDOServer() {
 		CDOServerImpl cdoServer = new CDOServerImpl();
+		return cdoServer;
+	}
+	
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated NOT
+	 */
+	public CDOServer createCDOServer( String repositoryName, String resourceName ) {
+		CDOServerImpl cdoServer = new CDOServerImpl( repositoryName, resourceName );
 		return cdoServer;
 	}
 

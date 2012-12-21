@@ -3,6 +3,8 @@
 package omp.ompp.cdo;
 
 import org.eclipse.emf.cdo.CDOObject;
+import org.eclipse.emf.cdo.net4j.CDONet4jSession;
+import org.eclipse.emf.cdo.server.IStore;
 
 /**
  * <!-- begin-user-doc -->
@@ -24,6 +26,9 @@ import org.eclipse.emf.cdo.CDOObject;
  * @generated
  */
 public interface CDOServer extends CDOObject {
+	
+	public CDONet4jSession getSession(IStore store);
+	
 	/**
 	 * Returns the value of the '<em><b>Port</b></em>' attribute.
 	 * <!-- begin-user-doc -->

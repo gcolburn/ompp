@@ -64,6 +64,10 @@ public class CDOClientImpl extends CDOObjectImpl implements CDOClient {
 		return connector;
 	}
 
+	public CDONet4jSession getSession() throws FactoryNotFoundException {
+		return getSession( getRepositoryName() );
+	}
+	
 	public CDONet4jSession getSession(String repositoryName )  throws FactoryNotFoundException {
 		if( session == null ) {
 			CDONet4jSessionConfiguration c = CDONet4jUtil.createNet4jSessionConfiguration();

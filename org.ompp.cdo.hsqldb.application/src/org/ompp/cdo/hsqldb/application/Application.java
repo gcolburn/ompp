@@ -4,6 +4,9 @@ import java.io.Console;
 import java.io.IOException;
 import java.util.Scanner;
 
+import omp.ompp.cdo.CDOServer;
+import omp.ompp.cdo.OMPPCdoFactory;
+
 import org.eclipse.emf.cdo.eresource.CDOResource;
 import org.eclipse.emf.cdo.net4j.CDONet4jSession;
 import org.eclipse.emf.cdo.server.IStore;
@@ -13,8 +16,6 @@ import org.eclipse.equinox.app.IApplicationContext;
 import org.hsqldb.persist.HsqlProperties;
 import org.hsqldb.server.Server;
 import org.hsqldb.server.ServerAcl.AclFormatException;
-import org.ompp.cdo.CDOClient;
-import org.ompp.cdo.CDOServer;
 import org.ompp.cdo.hsqldb.HSQLDBStoreFactory;
 
 public class Application implements IApplication {
@@ -80,7 +81,7 @@ public class Application implements IApplication {
 			return;
 		
 		IStore store = new HSQLDBStoreFactory().createStore(null, "localdb","localhost",null,"sa","");
-		cdoServer = new CDOServer("root", "/res1");
+		cdoServer = OMPPCdoFactory.eINSTANCE.createCDOServer("root", "/res1");
 		try {
 			session = cdoServer.getSession(store);
 		} catch (Exception e ) {
