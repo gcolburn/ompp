@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: OMPP HSQLDB Server
+Bundle-SymbolicName: org.ompp.cdo.hsqldb.application;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: org.ompp.cdo.hsqldb.application.Activator
+Require-Bundle: org.eclipse.core.runtime,
+ org.ompp.cdo.model;bundle-version="1.0.0",
+ org.ompp.cdo.hsqldb;bundle-version="1.0.0",
+ org.eclipse.emf.cdo.server;bundle-version="4.1.1",
+ org.hsqldb;bundle-version="2.2.8",
+ org.eclipse.emf.cdo.net4j;bundle-version="4.1.0"
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
